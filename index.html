@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="destyle.css">
+	<link rel="stylesheet" href="dist/sal.css">
 
 	<!--フォント-->
 	<script>
@@ -46,7 +47,7 @@
 					<li><a href="make.html">make</a></li>
 					<li><a href="use.html">use</a></li>
 					<li><a href="thanks.html">thanks</a></li>
-					<li><a href="../cd/index.html">CD site</a> </li>
+					<li><a href="../index.html">CD site</a> </li>
 				</ul>
 
 				<div class="dbutton kan">
@@ -57,7 +58,7 @@
 	</div>
 	<!-- 横メニュー終わり -->
 
-	<div class="split mainbox"><!--メインのメニュー-->
+	<div class="split mainbox" ><!--メインのメニュー-->
 
 		<div class="top">
 			<div class="toplogo">
@@ -70,7 +71,9 @@
 				<h1 class="kan h1 blue">no -<br>maho.</h1>
 			</div>
 
-			<div class="head2">
+			<div class="head2" data-sal="slide-up"
+			data-sal-delay="300"
+			data-sal-easing="ease-out-back">
 				<h4 class="kan glay">もしもの、スマホ。<br>もしもの、魔法。<br><span class="blue">ノーマホ。</span> </h4>
 			</div>
 		</div>
@@ -160,6 +163,7 @@
 	</div>
 	
 	<script src="script.js"></script>
+	<script src="dist/sal.js"></script>
 </body>
 
 
