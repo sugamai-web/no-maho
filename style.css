@@ -1,0 +1,455 @@
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 1rem;
+	overflow-x:hidden;
+
+	font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif; 
+}
+.hover a:hover{
+	opacity: 0.5;
+}
+.hover a img:hover{
+	opacity: 0.5;
+}
+a{
+	text-decoration: none;
+}
+p{
+	margin-bottom: 1rem;
+}
+
+/* アイコン設定 */
+.material-icons-round {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* 推奨サイズ */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+
+  /* WebKitブラウザサポート */
+  -webkit-font-smoothing: antialiased;
+  /* Chrome、Safariサポート */
+  text-rendering: optimizeLegibility;
+
+  /* Firefoxサポート */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* IEサポート */
+  font-feature-settings: 'liga';
+}
+/* フォント設定 */
+.kan{
+	font-family: kan412typos-std, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.eng{
+	font-family: mrsheffield-pro, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+.h1{
+	font-size: 3rem;
+	line-height: 1.2;
+}
+.h0{
+	font-size: 5rem;
+	line-height: 1.2;
+}
+.bold{
+	font-weight: bold;
+}
+.glay{
+	color: #595757;
+}
+.blue{
+	color: #4AC3DD;
+}
+.pink{
+	color: #FF8D94;
+}
+.white{
+	color: white;
+}
+
+
+/* ボタン設定 */
+.button{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+a.btn{
+	border: 1px solid #4AC3DD;
+	background-color: #4AC3DD;
+	padding: 1rem 2rem;
+}
+a.btn:hover{
+	background-color: white;
+	color: #4AC3DD;
+	transition: 1s;
+}
+
+/* 画面分割 */
+.split{
+	position: absolute;
+	height: 100%;
+	margin: 0;
+}
+
+/* メインボックス */
+.mainbox{
+	width: 80%;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-ms-overflow-style: none;    /* IE、Edge用 */
+  scrollbar-width: none;    /* Firefox用 */
+}
+.mainbox::-webkit-scrollbar {    /* Chrome、Safari用 */
+  display:none;
+}
+.top{
+	width: 100%;
+	height: 95%;
+	background-image: url(image/top1.png);
+	background-position:center;
+	background-size: cover;
+}
+.toplogo{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.toplogo img{
+	width: 20%;
+}
+
+.head{
+	width: 200px;
+	height: 300px;
+	border: 1px solid #595757;
+	margin: 4rem auto;
+	padding: 2rem;
+	position: relative;
+}
+.head h1{
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 2rem;
+}
+.head2{
+	width: 200px;
+	height: auto;
+	display: block;
+	margin: -2rem auto;
+}
+.head2 h4{
+	text-align: left;
+	display: inline-block;
+}
+
+.top3{
+	width: 100%;
+	margin-top: 4rem;
+	background-color: #F2F6FB;
+}
+.title{
+	position: relative;
+	padding-top: 4rem;
+	width: 500px;
+}
+
+/* 擬似要素設定 */
+.headEn{
+	margin: 2rem;
+}
+.headEn:after{
+	position: absolute;
+	width: 200px;
+	content: url(image/headMagic.png);
+	margin-top: 2px;
+	margin-left: 8px;
+}
+.top3 img{
+	width: 60%;
+	margin-top: 2rem;
+}
+.top3 p{
+	margin-top: 2rem;
+}
+
+/* 記事 */
+.article{
+	display: flex;
+}
+.article .text{
+	padding-right: 2rem;
+}
+.top402{
+	display: flex;
+	margin-top: 4rem;
+}
+.headEn2{
+	margin: 0 2rem 2rem 2rem;
+}
+.headEn2:after{
+	position: absolute;
+	width: 200px;
+	content: url(image/nomahoword.png);
+	margin-top: 2px;
+	margin-left: 8px;
+}
+.top402 p{
+	padding-left: 4rem;
+	margin-right: 2rem;
+}
+.top402 .text .button a{
+	margin-left: 4rem;
+}
+.text h1{
+	border-bottom: 1px solid #4AC3DD;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 4rem 0;
+}
+.item{
+	position: relative;
+	width: 100%;
+}
+.item img{
+	position: relative;
+	display: block;
+	height: 500px;
+	width: 100%;
+	object-fit: cover;
+}
+.item a{
+	position: relative;
+}
+.item p{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	padding: 2rem 0;
+	left: 0;
+	bottom: 0;
+	font-size: 3rem;
+}
+.item p a{
+	color: white;
+}
+
+.backblue{
+	background: rgba(74,195,221, 0.7);
+	font-size: 2rem;
+	color: white;
+}
+.backpink{
+	background: rgba(247, 185, 189, 0.7);
+	font-size: 2rem;
+	color: white;
+}
+.footer{
+	width: 100%;
+	bottom: 0;
+	height: 30%;
+	border-top: 1px solid #595757;
+	padding: 4rem 0 4rem 4rem;
+}
+
+
+/* サブメニュー */
+.submenu{
+	position: fixed;
+	width: 15%;
+	right: 0;
+	z-index: 101;
+}
+
+.menu{
+	margin: 30px auto;
+	box-sizing: border-box;
+}
+
+.logo img{
+	padding-top: 1rem;
+	padding-right: 18px;
+	width: 7rem;
+	display: block;
+	margin: 0 auto;
+}
+
+#ham{
+	cursor: pointer;
+	background-color: white;
+	display: none;
+	padding: 20px;
+
+	position: fixed;
+	z-index: 100;
+}
+
+#ham .bar{
+	background-color: #595757;
+	width: 20px;
+	height: 1px;
+	border-radius: 5px;
+	left: 20px;
+	opacity: 1;
+	visibility: visible;
+	transition: 0.5s ease;
+	transform-origin: left;
+}
+#ham .bar1{
+	 margin-bottom: 5px;
+}
+#ham .bar3{
+	 margin-top: 5px;
+}
+#ham.toggle .bar1 {
+	transform-origin: left;
+	transform: rotate(39deg);
+}
+
+#ham.toggle .bar2 {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#ham.toggle .bar3 {
+	transform-origin: left;
+	transform: rotate(-39deg);
+}
+
+.navbar{
+	margin-top: 3rem;
+}
+.navbar ul li{
+	list-style: none;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+.navbar li a{
+	font-size: 1rem;
+	text-decoration: none;
+	color: #595757;
+}
+
+.dbutton{
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	margin-top: 190px;
+}
+.dbutton:hover{
+	cursor: pointer;
+	opacity: 0.5;
+}
+.dbutton a{
+	background-color: #4AC3DD;
+	color: white;
+}
+.dbutton i{
+	vertical-align:text-bottom;
+	font-size: 1.2rem;
+}
+
+
+
+
+/* レスポンシブ */
+@media screen and  (max-width:900px){
+	.split{
+		position: relative;
+		width: 100%;
+	}
+
+	/* 全体 */
+	p{
+		font-size: 16px;
+	}
+
+	/* サブメニュー */
+	.submenu{
+		height: 0%;
+	}
+
+	.logo{
+		display: none;
+	}
+	.navbar{
+		position: fixed;
+		bottom: 95%;
+		width: 100%;
+		background-color: white;
+		transition: 0.5s ease-out;
+	}
+	.navbar ul li{
+		display: block;
+	}
+	#ham{
+		display: block;
+		top: 0;
+	}
+	#ham.toggle + .navbar{
+		transform: translateY(100%);
+	}
+	.dbutton{
+		margin-top: 50px;
+	}
+
+	/* メインメニュー */
+	.mainbox{
+		height: 100%;
+		padding: 0;
+	}
+	.toplogo img{
+		width: 40%;
+	}
+	.top3 img{
+		width: 80%;
+	}
+	.article{
+		display: block;
+	}
+	.text{
+		padding: 2rem;
+		width: 80%;
+	}
+	.top402{
+		display: block;
+	}
+	.top402 p{
+		padding: 0;
+	}
+
+
+
+
+	
+}
